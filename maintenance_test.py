@@ -9,7 +9,7 @@ from selenium import webdriver
 
 class MaintenanceTest(unittest.TestCase):
     
-    HOST = 'http://%s.%s/' % (os.getenv('CITY'), os.getenv('HOST'))
+    HOST = 'http://nsk.%s/' % os.getenv('HOST')
     ID = os.getenv('ID')
     driver = webdriver.Firefox()
 
