@@ -16,7 +16,7 @@ class MaintenanceTest(unittest.TestCase):
     def tearDown(self):
         """Удаление переменных для всех тестов. Остановка приложения"""
 
-        self.driver.get('%slogout/' % self.ADDRESS)
+        self.driver.get('%slogout/' % self.HOST)
         self.driver.close()
         if sys.exc_info()[0]:   
             print sys.exc_info()[0]
